@@ -1,0 +1,82 @@
+<!-- Setup Screen Component -->
+<div id="setup-screen" class="screen active">
+    <header class="mobile-header">
+        <h1>🎨 AI Storybook Generator</h1>
+        <p>Powered by Gemini 2.5 Flash</p>
+    </header>
+
+    <main class="mobile-container">
+        <!-- Story Input Section -->
+        <section id="story-input" class="card">
+            <h2>📜 Create Your Story</h2>
+            <form id="story-form">
+                <div class="form-group">
+                    <label for="story-prompt">Story Idea:</label>
+                    <textarea id="story-prompt" rows="3" placeholder="e.g., A time-traveling squirrel discovers a magical acorn..."></textarea>
+                </div>
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="age-group">Age Group:</label>
+                        <select id="age-group">
+                            <option value="3-6">3-6 years</option>
+                            <option value="7-10" selected>7-10 years</option>
+                            <option value="11-14">11-14 years</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="genre">Genre:</label>
+                        <select id="genre">
+                            <option value="adventure">Adventure</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="science-fiction">Science Fiction</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="comedy">Comedy</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="art-style">Art Style:</label>
+                        <select id="art-style">
+                            <option value="watercolor">Watercolor</option>
+                            <option value="cartoon">Cartoon</option>
+                            <option value="pixel-art">Pixel Art</option>
+                            <option value="anime">Anime</option>
+                            <option value="realistic">Realistic</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="num-scenes">Number of Pages:</label>
+                        <input type="number" id="num-scenes" min="3" max="10" value="5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="character-count">Main Characters:</label>
+                        <input type="number" id="character-count" min="1" max="5" value="2">
+                    </div>
+                </div>
+                
+                <button type="submit" id="generate-btn" class="btn btn-primary btn-mobile">
+                    🚀 Generate Story
+                </button>
+            </form>
+        </section>
+
+        <!-- Character Setup Section -->
+        <section id="character-setup" class="card hidden">
+            <h2>🧍 Character Details</h2>
+            <div id="character-forms"></div>
+            <button id="lock-characters" class="btn btn-secondary btn-mobile">
+                🔒 Lock Characters & Start Story
+            </button>
+        </section>
+
+        <!-- Saved Stories Section -->
+        <section id="saved-stories" class="card">
+            <h2>📚 Your Stories</h2>
+            <div id="stories-list" class="stories-grid"></div>
+        </section>
+    </main>
+</div>

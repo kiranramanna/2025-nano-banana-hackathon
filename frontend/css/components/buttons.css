@@ -1,0 +1,109 @@
+/* Button Components */
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--animation-duration);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-mobile {
+    width: 100%;
+    padding: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page Navigation Buttons */
+.page-nav-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all var(--animation-duration);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-nav-btn:hover:not(:disabled) {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+.page-nav-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Action Buttons */
+.action-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition: all var(--animation-duration);
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Menu Buttons */
+.menu-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all var(--animation-duration);
+    font-size: 1rem;
+}
+
+.menu-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+}

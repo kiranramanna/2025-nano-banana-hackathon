@@ -1,0 +1,38 @@
+/* Typography Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Age-based text sizing */
+.age-3-6 .page-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.age-7-10 .page-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.age-11-14 .page-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}

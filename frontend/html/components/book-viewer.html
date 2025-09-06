@@ -1,0 +1,100 @@
+<!-- Book Viewer Screen Component -->
+<div id="book-viewer" class="screen hidden">
+    <!-- Book Header -->
+    <header class="book-header">
+        <button id="back-to-setup" class="btn-icon">
+            <span>←</span>
+        </button>
+        <h2 id="story-title"></h2>
+        <button id="book-menu" class="btn-icon">
+            <span>☰</span>
+        </button>
+    </header>
+
+    <!-- Book Container -->
+    <div class="book-container">
+        <!-- Page Display -->
+        <div class="book-pages" id="book-pages">
+            <div class="book-page active" id="current-page">
+                <div class="page-background" id="page-background">
+                    <div class="page-content">
+                        <div class="page-image-container">
+                            <img id="page-image" src="" alt="Page illustration">
+                            <div class="image-loading hidden">
+                                <div class="spinner"></div>
+                                <p>Creating magical illustration...</p>
+                            </div>
+                        </div>
+                        <div class="page-text">
+                            <h3 id="page-title"></h3>
+                            <p id="page-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Navigation -->
+        <div class="page-navigation">
+            <button id="prev-page" class="page-nav-btn" disabled>
+                <span>‹</span>
+            </button>
+            <div class="page-indicator">
+                <span id="current-page-num">1</span> / <span id="total-pages">5</span>
+            </div>
+            <button id="next-page" class="page-nav-btn">
+                <span>›</span>
+            </button>
+        </div>
+
+        <!-- Story Choice Options -->
+        <div id="story-choices" class="story-choices hidden">
+            <h3>What happens next?</h3>
+            <div class="choices-grid">
+                <button class="choice-card" data-choice="0">
+                    <div class="choice-icon">📖</div>
+                    <h4>Original Path</h4>
+                    <p class="choice-description"></p>
+                </button>
+                <button class="choice-card" data-choice="1">
+                    <div class="choice-icon">✨</div>
+                    <h4>Magical Twist</h4>
+                    <p class="choice-description"></p>
+                </button>
+                <button class="choice-card" data-choice="2">
+                    <div class="choice-icon">🎭</div>
+                    <h4>Surprise Turn</h4>
+                    <p class="choice-description"></p>
+                </button>
+                <button class="choice-card" data-choice="3">
+                    <div class="choice-icon">🚀</div>
+                    <h4>Adventure Path</h4>
+                    <p class="choice-description"></p>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Book Menu Overlay -->
+    <div id="book-menu-overlay" class="menu-overlay hidden">
+        <div class="menu-content">
+            <button class="menu-close">×</button>
+            <h3>Story Menu</h3>
+            <div class="menu-options">
+                <button id="restart-story" class="menu-btn">
+                    🔄 Restart Story
+                </button>
+                <button id="save-progress" class="menu-btn">
+                    💾 Save Progress
+                </button>
+                <button id="export-pdf" class="menu-btn hidden">
+                    📄 Download as PDF
+                </button>
+                <button id="share-story" class="menu-btn hidden">
+                    🌐 Share Story
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

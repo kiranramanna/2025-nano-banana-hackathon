@@ -1,0 +1,30 @@
+/* CSS Variables and Custom Properties */
+
+:root {
+    /* Colors */
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    
+    /* Backgrounds */
+    --bg-primary: #f9fafb;
+    --bg-secondary: #ffffff;
+    
+    /* Text Colors */
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    
+    /* Borders */
+    --border-color: #e5e7eb;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    
+    /* Layout */
+    --border-radius: 12px;
+    --animation-duration: 0.3s;
+}

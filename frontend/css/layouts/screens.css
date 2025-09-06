@@ -1,0 +1,55 @@
+/* Screen Layouts */
+
+.screen {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Mobile Header */
+.mobile-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.mobile-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.mobile-header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Mobile Container */
+.mobile-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Book Header */
+.book-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow-md);
+}
+
+.book-header h2 {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+}

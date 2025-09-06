@@ -1,0 +1,45 @@
+/* Print Styles for PDF Export */
+
+@media print {
+    /* Hide interactive elements */
+    .book-header,
+    .page-navigation,
+    .quick-actions,
+    .story-choices,
+    .menu-overlay {
+        display: none !important;
+    }
+
+    /* Clean page layout */
+    .book-pages {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .page-background {
+        padding: 2cm;
+        background: white !important;
+    }
+
+    .page-content {
+        max-width: 100%;
+    }
+
+    /* Force page breaks */
+    .page-break {
+        page-break-after: always;
+    }
+
+    /* Ensure images print properly */
+    .page-image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Clean text for printing */
+    .page-text {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+}

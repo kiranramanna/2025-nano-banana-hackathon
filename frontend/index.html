@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="AI-powered storybook generator for children using Gemini 2.5 Flash">
+    <meta name="keywords" content="AI, storybook, children, stories, generator, Gemini">
+    <title>AI Storybook Generator - Gemini Powered</title>
+    
+    <!-- Main CSS Import (includes all modular CSS) -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Main App Container -->
+    <div id="app">
+        <!-- Components will be loaded here dynamically -->
+    </div>
+
+    <!-- JavaScript Module Imports -->
+    <!-- Configuration -->
+    <script src="js/config.js"></script>
+    
+    <!-- Component Loader (loads HTML components) -->
+    <script src="js/component-loader.js"></script>
+    
+    <!-- Service Modules -->
+    <script src="js/api.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/narrator.js"></script>
+    
+    <!-- UI Controllers -->
+    <script src="js/ui.js"></script>
+    <script src="js/bookViewer.js"></script>
+    <script src="js/storyChoices.js"></script>
+    
+    <!-- Main Application -->
+    <script src="js/app.js"></script>
+    
+    <!-- Initialize app after components are loaded -->
+    <script>
+        // Wait for components to be loaded before initializing the app
+        window.addEventListener('componentsLoaded', () => {
+            console.log('All components loaded, initializing app...');
+            // The app.js will handle initialization
+        });
+    </script>
+</body>
+</html>

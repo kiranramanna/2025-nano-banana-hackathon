@@ -1,0 +1,41 @@
+{
+    "streamable-mcp-server": {
+      "type": "http",
+      "url": "http://127.0.0.1:12306/mcp"
+    },
+    "mcpServers": {
+        "context7": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp"
+            ],
+            "env": {}
+        },
+        "playwright": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "playwright-mcp-server"
+            ],
+            "env": {}
+        },
+        "serena": {
+            "type": "stdio",
+            "command": "uvx",
+            "args": [
+                "--from",
+                "git+https://github.com/oraios/serena",
+                "serena",
+                "start-mcp-server",
+                "--context",
+                "ide-assistant",
+                "--project",
+                "/Users/kiran.ramanna/Documents/github/codex-work"
+            ],
+            "env": {}
+        }
+    }
+}

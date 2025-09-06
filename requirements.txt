@@ -1,0 +1,11 @@
+google-genai>=1.33.0
+Pillow>=11.3.0
+ipython
+jupyter
+flask==3.0.0
+flask-cors==4.0.0
+python-dotenv==1.0.0
+reportlab==4.0.9
+pydantic==2.5.0
+moviepy==1.0.3
+psutil==5.9.0
